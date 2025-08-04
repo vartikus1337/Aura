@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import "tailwindcss";
+
+.gradient-btn {
+    background: linear-gradient(#46f4db, #57d272);
+}
+
+.gradient-border-btn {
+    @apply rounded-[10px] border-[5px] border-transparent font-semibold;
+    background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(90deg, #46f4db, #57d272) border-box;
+}
+
+.font-muller-b {
+    @apply font-bold font-muller;
+}
+
+@font-face {
+    font-family: Muller;
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+    src: url("/fonts/Muller-Bold.otf") format("otf");
+}
+
+@theme {
+    --color-primary: #46f4db;
+    --color-black: #07060b;
+    --color-gray: #c4c4c4;
+    --color-gray-light: #ededf2;
+    --color-gray-middle: #95959d;
+    --color-gray-deep: #37373e;
+    --color-red: #d13130;
+
+    --font-muller: "Muller", sans-serif;
+    --font-russo: "Russo One", sans-serif;
+
+    /* Button padding */
+    --spacing-btn-x: 54px;
+    --spacing-btn-y: 25px;
+
+    --animate-fadeIn: fadeIn 1s ease-in forwards;
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opaciry: 1;
+        }
+    }
+}

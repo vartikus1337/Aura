@@ -24,48 +24,48 @@ const NEW_STICKERS = [
 
 const TOP_STICKERS = [
   {
-    img: "/imgs/holofobia1.png",
-    avatar: "/imgs/ttgs_avatar.png",
+    img: "imgs/holofobia1.png",
+    avatar: "imgs/ttgs_avatar.png",
     author: "ttgs",
     name: "Holofobia1",
     price: "4.70 ETH",
     amount: "($16,873.47)",
   },
   {
-    img: "/imgs/yeee.png",
-    avatar: "/imgs/tat2_avatar.png",
+    img: "imgs/yeee.png",
+    avatar: "imgs/tat2_avatar.png",
     author: "Tat_2",
     name: "Y.EEE",
     price: "3.00 ETH",
     amount: "($10,731.24)",
   },
   {
-    img: "/imgs/baby_yoda.png",
-    avatar: "/imgs/chris22_avatar.png",
+    img: "imgs/baby_yoda.png",
+    avatar: "imgs/chris22_avatar.png",
     author: "Chris22",
     name: "Baby Joda",
     price: "2.00 ETH",
     amount: "($7,121.04)",
   },
   {
-    img: "/imgs/infinity_09.png",
-    avatar: "/imgs/oswaald_avatar.png",
+    img: "imgs/infinity_09.png",
+    avatar: "imgs/oswaald_avatar.png",
     author: "Oswaald",
     name: "Infinity_09",
     price: "1.6109 ETH",
     amount: "($5,762.32)",
   },
   {
-    img: "/imgs/sadsadsad.png",
-    avatar: "/imgs/paul-22_avatar.png",
+    img: "imgs/sadsadsad.png",
+    avatar: "imgs/paul-22_avatar.png",
     author: "Paul-22",
     name: "Sadsadsad",
     price: "1.50 ETH",
     amount: "($5,365.62)",
   },
   {
-    img: "/imgs/attntn.png",
-    avatar: "/imgs/wardxxx_avatar.png",
+    img: "imgs/attntn.png",
+    avatar: "imgs/wardxxx_avatar.png",
     author: "ttgs",
     name: "Attntn",
     price: "1.0 ETH",
@@ -96,9 +96,9 @@ const Header = () => {
   return (
     <header className="flex-col">
       <div className="flex justify-between p-3">
-        <img className="w-[75px] md:w-[100px]" src="/svg/aura.svg" />
+        <img className="w-[75px] md:w-[100px]" src="svg/aura.svg" />
         {isMobile && (
-          <img className="w-9" src="/svg/account_balance_wallet.svg" />
+          <img className="w-9" src="svg/account_balance_wallet.svg" />
         )}
       </div>
       <nav className="border-t-1 border-gray flex justify-between p-3 ">
@@ -122,7 +122,7 @@ const Hero = () => {
           Стать автором
         </Button>
       </div>
-      <img src="/imgs/stickers_hero.png" />
+      <img src="imgs/stickers_hero.png" />
     </div>
   );
 };
@@ -133,14 +133,14 @@ const CurrentAuction = () => {
       <div className="flex items-center gap-[15px]">
         <h1 className="text-[30px] font-russo">Аукцион</h1>
         <div className="flex items-center gap-1 p-2 pl-3.5 pr-3.5 border-2 rounded-[40px] border-red border-solid">
-          <img src="/svg/ellipse.svg" />
+          <img src="svg/ellipse.svg" />
           <div className="text-red font-muller-b text-base">Live auction</div>
         </div>
       </div>
-      <img className="mt-8 mb-8" src="/imgs/witcher.png" />
+      <img className="mt-8 mb-8" src="imgs/witcher.png" />
       <div className="flex flex-col gap-4">
         <div className="flex gap-2 bg-gray-light p-4 pt-[11px] pb-[11px] rounded-[18px] w-fit font-muller-b">
-          <img src="/imgs/avatar.png" />
+          <img src="imgs/avatar.png" />
           SergeVM_222
         </div>
         <h2 className="font-muller text-3xl">Witcherrr_3 (xml_t5)</h2>
@@ -178,12 +178,12 @@ const CardSticker = () => {
   return (
     <div>
       <div className="pt-[7px] pb-[7px] pl-[68px] pr-[68px] bg-gray-light rounded-t-[40px]">
-        <img src="/imgs/alien.png" />
+        <img src="imgs/alien.png" />
       </div>
       <div className="bg-black text-white h-[168px] w-[296px] rounded-b-[40px] p-4">
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 font-muller-b">
-            <img src="/imgs/avatar2.png" />
+            <img src="imgs/avatar2.png" />
             Frank.Nagval
           </div>
           <h2 className="font-muller-b text-xl/5">Alien (green) e_e</h2>
@@ -206,11 +206,11 @@ const Auctions = () => {
       <div className="flex flex-col">
         <CardSticker />
         <div className="flex justify-center mt-4 gap-2">
-          <img src="/svg/ellipse_primary.svg" />
+          <img src="svg/ellipse_primary.svg" />
           {Array(5)
             .fill(0)
             .map((_, i) => (
-              <img src="/svg/ellipse_gray.svg" key={i} />
+              <img src="svg/ellipse_gray.svg" key={i} />
             ))}
         </div>
       </div>
@@ -274,7 +274,7 @@ const Subscriber = () => {
           Согласен на обработку персональных данных
         </p>
       </div>
-      <img src="/imgs/pack_ok.png" />
+      <img src="imgs/pack_ok.png" />
     </div>
   );
 };
@@ -290,13 +290,13 @@ const Join = () => {
         Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с
         тобой и обговорим условия сотрудничества! <b>Удачи!</b>
       </p>
-      <img src="/imgs/example_pack.png" />
+      <img src="imgs/example_pack.png" />
       <input ref={loadRef} hidden type="file" />
       <div
         className="bg-gray-light flex flex-col items-center p-[47px] rounded-[40px] gap-4"
         onClick={() => loadRef.current?.click()}
       >
-        <img src="/svg/plus_file.svg" width={60} />
+        <img src="svg/plus_file.svg" width={60} />
         <p className="font-muller text-gray-middle text-nowrap">
           Прикрепить работы (.jpeg / .png)
         </p>
@@ -357,15 +357,15 @@ const Rules = () => {
       </h1>
       <ul className="flex flex-col gap-4 mt-4">
         <li className="flex gap-2 h-8 leading-4">
-          <img src="/svg/img.svg" />
+          <img src="svg/img.svg" />
           Минимум пять опубликованных работ
         </li>
         <li className="flex items-center gap-2 h-8 leading-4">
-          <img src="/svg/smile.svg" />
+          <img src="svg/smile.svg" />
           Инвайт трём коллегам по цеху
         </li>
         <li className="flex items-center gap-2 h-8 leading-4">
-          <img src="/svg/apply.svg" />
+          <img src="svg/apply.svg" />
           Верифицированный аккаунт
         </li>
       </ul>
@@ -378,7 +378,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-primary flex flex-col items-center">
-        <img className="m-5" src="/svg/aura.svg" width={75} />
+        <img className="m-5" src="svg/aura.svg" width={75} />
         <nav className="border-t w-full p-3 pt-[10px] pb-[10px] flex justify-between font-muller-b">
           <a>Соглашение</a>
           <a>Лицензия</a>

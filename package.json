@@ -1,0 +1,25 @@
+{
+	"name": "aura-def",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "bun --hot src/server",
+		"build": "bun run src/build.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.8",
+		"@types/bun": "latest",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"bun-plugin-tailwind": "^0.1.2",
+		"tailwindcss": "^4.1.17"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	}
+}
